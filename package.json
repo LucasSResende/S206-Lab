@@ -1,0 +1,22 @@
+{
+  "name": "aula4",
+  "version": "1.0.0",
+  "description": "Atividade aula 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasSResende/S206-Lab.git"
+  },
+  "author": "Lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasSResende/S206-Lab/issues"
+  },
+  "homepage": "https://github.com/LucasSResende/S206-Lab#readme",
+  "dependencies": {
+    "cypress": "^11.0.0"
+  }
+}
