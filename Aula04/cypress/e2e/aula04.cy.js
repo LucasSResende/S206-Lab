@@ -76,8 +76,8 @@ describe('Testes no site do Moodle - Inatel', () => {
 
 function logAuto() {
 
-  let user = 'lucas.resende@ges.inatel.br'
-  let pw = 'L652466r!'
+  let user = 'xxx@email.com.br'
+  let pw = '********'
   let logInfo = [user, pw]
 
   cy.visit('https://moodle.inatel.br/login/index.php')
