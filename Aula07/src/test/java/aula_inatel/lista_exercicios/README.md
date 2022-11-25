@@ -6,78 +6,45 @@
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
 ![Json](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
 ![Karate](imgkarate.png)
+![Maven](https://img.shields.io/badge/apache_maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
 
 </div>
 
-## 📜 Passo a passo
+## 📜 Passos
 
 <h3> GitHub, local e Git Bash:</h3>
 
 - Criar um diretório local e conta no GitHub e um repositório para armazenamento e futuros commits do projeto;
 
-- Entrar no terminal Git Bash;
-
-- Iniciar o projeto com os comandos:
-```
-npm init
-```
-```
-npm install cypress
-```
-
-- Abrir cypress pela linha de comando:
-```
-./node_modules/.bin/cypress open
-```
-
 <h3> VS Code (HTML):</h3>
 
-- Construir os casos de testes conforme aprendidos nas aulas;
-- Todas as implementaçções estarão rodando em segundo plano e atualizando no navegador enquanto o cypress estiver rodando, não se preocupe, continue codando 😁;
+- Construir os casos de testes conforme aprendidos nas aulas, desta vez com Java e Karate;
+- 🚨Todas as vezes que implementar um teste, fique sempre preparado para dar o comando:
 
-- Após concluídas todas as implementações dos testes criados, verificar se está tudo pronto para criar os relatórios 📩. Fique atento, esta parte é muitoo importante e deve ser feita seguindo corretamente as instruções abaixo:
-
-🚨
-- Rodar specs pela primeira vez para criação das dependências:
 ```
-./node_modules/.bin/cypress run --spec 'cypress/e2e/**/'
+mvn test -Dtest=ListaRunner 
+(Neste caso do comando feito, coloca-se depois do '=' o nome da Classe Java)
 ```
 
-- Gerar um report HTML:
+- Após concluídas todas as implementações dos testes criados, verificar se está tudo pronto e se os testes terão sucesso, pois depois do comando feito acima, irá retornar no terminal Bash um quadro com informações dos tetses realizados. Exemplo:
 
-> -- Adicionando as dependências necessárias para gerar o reporte de testes:
-npm i --save-dev cypress-mochawesome-reporter
-	
-> -- Modificar o arquivo cypress.config.js(Não é uma linha no terminal, é um comando para configuração do mochawsome 🚩):
 ```
-const { defineConfig } = require('cypress');
+Karate version: 1.0.1
+======================================================
+elapsed:  11.95 | threads:    1 | thread time: 7.22
+features:     1 | skipped:    0 | efficiency: 0.60
+scenarios:    6 | passed:     6 | failed: 0
+======================================================
 
-module.exports = defineConfig({
-  reporter: 'cypress-mochawesome-reporter',
-  e2e: {
-    setupNodeEvents(on, config) {
-      require('cypress-mochawesome-reporter/plugin')(on);
-    },
-  },
-});
+HTML report: (paste into browser to view) | Karate version: 1.0.1
+file:///D:/Material%20Inatel/6º%20semestre/S206/Lab/S206-Lab/Aula07/target/karate-reports/karate-summary.html
+===================================================================
 ```
 
-> -- Adicionar em cypress/support/e2e.js (Não é uma linha no terminal, é um comando para configuração do mochawsome 🚩):
-
-import 'cypress-mochawesome-reporter/register';
-
-> -- - Rodar specs pela segunda vez para garatir criação do report correto:
-```
-./node_modules/.bin/cypress run --spec 'cypress/e2e/**/'
-```
-
-- Visualizar o relatório em um navegador arrastando o arquivo:
-
-Aula04 > cypress > reports\html > index.html
-
-para um navegador como aba, e analisar os estes realizados;
+- Para visualizar o relatório 📩, em um navegador arraste o arquivo do próprio projeto ou verifique abaixo do quadro de testes no resultado do seu próprio terminal, como mostra acima, é só copiar o link e colar em um navegador😁!
 
 - Agora é só subir no GitHub o seu projeto construído e pronto!🛠️
 
