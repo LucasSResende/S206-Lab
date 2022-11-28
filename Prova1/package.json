@@ -1,0 +1,21 @@
+{
+  "name": "prova1",
+  "version": "1.0.0",
+  "description": "<h1 align='center'>Lista Aula 04 - S206 Lab</h1>\r <p align=\"left\">Pasta destinada ao exercício proposto à consolidação de conhecimentos sobre GitHub, conhecimentos básicos adquiridos de HTML, casos de testes e geração de relatório dos testes realizados</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^11.2.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Prova1"
+  }
+}
