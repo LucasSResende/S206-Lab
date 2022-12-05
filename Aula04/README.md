@@ -76,7 +76,7 @@ import 'cypress-mochawesome-reporter/register';
 
 Aula04 > cypress > reports\html > index.html
 
-para um navegador como aba, e analisar os estes realizados;
+para um navegador como aba, e analisar os testes realizados;
 
 - Agora é só subir no GitHub o seu projeto construído e pronto!🛠️
 
